@@ -2,24 +2,24 @@ let nums = [1, 2, 3]
 nums[0] = 10
 console.log(nums) // [10, 2, 3]
 
-let nums = [1, 2, 3]
-let numbers = [1, 2, 3]
-console.log(nums == numbers) // false
+let nums1 = [1, 2, 3]
+let numbers1 = [1, 2, 3]
+console.log(nums1 == numbers1) // false
 
-let userOne = {
+let UserOne = {
   name: 'Asabeneh',
   role: 'teaching',
   country: 'Finland'
 }
-let userTwo = {
+let UserTwo = {
   name: 'Asabeneh',
   role: 'teaching',
   country: 'Finland'
 }
 console.log(userOne == userTwo) // false
 
-let numbers = nums
-console.log(nums == numbers)  // true
+let numbers = nums1
+console.log(nums1 == numbers1)  // true
 
 let userOne = {
 name:'Asabeneh',
@@ -28,3 +28,4 @@ country:'Finland'
 }
 let userTwo = userOne
 console.log(userOne == userTwo)  // true
+console.log(typeof userOne);
