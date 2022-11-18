@@ -1,4 +1,3 @@
-const prompt=require('prompt-sync')();
 //1
 let base = prompt('Enter base:');
 let height = prompt('Enter height:');
@@ -66,4 +65,15 @@ UserAge > 18
 //14
 let NumOfYear = parseFloat(prompt('Enter number of years you live: '))
 let LiveInSec = NumOfYear * 31536000
-console.log()
+console.log(`Enter number of years you live: ${NumOfYear} `, `\nYou lived ${LiveInSec} seconds.`)
+//15
+const now = new Date()
+const year = now.getFullYear() 
+const month = now.getMonth() + 1 
+const date = now.getDate() 
+const hours = now.getHours() 
+const minutes = now.getMinutes()
+
+console.log(`${year}-${month}-${date} ${hours}:${minutes}`)
+console.log(`${date}-${month}-${year} ${hours}:${minutes}`)
+console.log(`${date}/${month}/${year} ${hours}:${minutes}`)
