@@ -15,8 +15,8 @@ console.log(`Enter side a: ${a}`, `\nEnter side b: ${b}`, `\nEnter side c: ${c}`
 //3
 let length = prompt('length: ');
 let width = prompt('length: ');
-let areasRectangle = length * width
-let perimeterRectangle = 2 * (length + width)
+let areasRectangle = parseFloat(length) * parseFloat(width)
+let perimeterRectangle = 2 * (parseFloat(length) + parseFloat(width))
 console.log(`area = ${areasRectangle}`, `\nperimeter = ${perimeterRectangle}`)
 //4
 let r = prompt('radius: ');
